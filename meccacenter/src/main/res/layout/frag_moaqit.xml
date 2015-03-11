@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/color_window_background"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:shadowColor="#22000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="1"
+                    android:text="{fa-map-marker} Location :"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <Spinner
+                    android:id="@+id/SpLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvDateJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fb9800"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/tvDateHiijri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fb9800"
+                    android:typeface="monospace" />
+
+
+            </LinearLayout>
+        </TableRow>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvFajr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Fajr"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvFajrTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvSunrise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Sunrise"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvSunriseTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="?android:attr/textAppearance" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvDhuhr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Dhuhr"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvDhuhrTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="?android:attr/textAppearance" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvAsr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Asr"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvAsrTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvMaghrib"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Maghrib"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvMaghribTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="?android:attr/textAppearance" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/tvIsha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/Isha"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+
+                <TextView
+                    android:id="@+id/tvIshaTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="end|center_vertical"
+                    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+            </TableRow>
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border" android:id="@+id/NextDayRow"
+            android:padding="8dp" android:visibility="invisible"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvNextFajr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="start|center_vertical"
+                android:text="Next Fajr"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#fb9800" />
+
+            <TextView
+                android:id="@+id/tvNextFajrTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#fb9800" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+        <IconButton
+            android:id="@+id/BTNDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="{fa-smile-o}Donate"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mecca_center.app.meccacenter.DonateActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ToolBarStyle"
+        android:id="@+id/toolbar"
+        />
+   <WebView
+       android:layout_width="match_parent" android:id="@+id/donatepage"
+       android:layout_height="match_parent"/>
+</LinearLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.2.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Mecca_api" />
+            <option value="$PROJECT_DIR$/SuperRecyclerView" />
+            <option value="$PROJECT_DIR$/compassview" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/meccacenter" />
+            <option value="$PROJECT_DIR$/meccacenteradmin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
+

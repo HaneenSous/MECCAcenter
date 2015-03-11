@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="azan_names">
+        <item>abdul_ghaffar</item>
+        <item>abdul_hakam</item>
+        <item>adhan_alaqsa</item>
+            <item>adhan_egypt</item>
+            <item>adhan_halab</item>
+            <item>adhan_madina</item>
+            <item>adhan_makkah</item>
+            <item>al_hossaini</item>
+            <item>bakir_bash</item>
+            <item>hafez</item>
+            <item>hafiz_murad</item>
+            <item>menshavi</item>
+            <item>naghshbandi</item>
+            <item>saber</item>
+            <item>sharif_doman</item>
+            <item>yusuf_islam</item>
+
+
+
+    </string-array>
+    <string-array name="azan_values">
+        <item>abdul_ghaffar.mp3</item>
+        <item>abdul_hakam.mp3</item>
+        <item>adhan_alaqsa.mp3</item>
+        <item>adhan_egypt.mp3</item>
+        <item>adhan_halab.mp3</item>
+        <item>adhan_madina.mp3</item>
+        <item>adhan_makkah.mp3</item>
+        <item>al_hossaini.mp3</item>
+        <item>bakir_bash.mp3</item>
+        <item>hafez.mp3</item>
+        <item>hafiz_murad.mp3</item>
+        <item>menshavi.mp3</item>
+        <item>naghshbandi.mp3</item>
+        <item>saber.mp3</item>
+        <item>sharif_doman.mp3</item>
+        <item>yusuf_islam.mp3</item>
+
+    </string-array>
+
+
+    <string-array name="azan_play_names">
+        <item>Fajr</item>
+        <item>Sunrise</item>
+        <item>Dhuhr</item>
+        <item>Asr</item>
+        <item>Maghrib</item>
+        <item>Isha</item>
+        </string-array>
+<string-array name="Locations">
+    <item>Masjd</item>
+    <item>Current Location</item>
+</string-array>
+
+</resources>

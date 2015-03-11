@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<PreferenceCategory android:title="Azan Settings"  >
+    <com.mecca_center.app.utils.AzanListPreference
+
+        android:key="Azantone"
+        android:title="Azantone"
+         android:entries="@array/azan_names"
+          android:entryValues="@array/azan_values"
+
+        />
+
+    <MultiSelectListPreference
+        android:entryValues="@array/azan_play_names"
+        android:entries="@array/azan_play_names"
+        android:key="playAzan"
+        android:title="Select to play Azan"
+
+        />
+
+
+</PreferenceCategory>
+
+</PreferenceScreen>

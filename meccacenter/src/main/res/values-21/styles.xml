@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+
+    </style>
+
+    <style name="ToolBarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:background">?android:attr/colorPrimary</item>
+    </style>
+
+</resources>

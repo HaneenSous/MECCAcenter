@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MECCAcenter.iml" filepath="$PROJECT_DIR$/MECCAcenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mecca_api/Mecca_api.iml" filepath="$PROJECT_DIR$/Mecca_api/Mecca_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperRecyclerView/SuperRecyclerView.iml" filepath="$PROJECT_DIR$/SuperRecyclerView/SuperRecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compassview/compassview.iml" filepath="$PROJECT_DIR$/compassview/compassview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meccacenter/meccacenter.iml" filepath="$PROJECT_DIR$/meccacenter/meccacenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meccacenteradmin/meccacenteradmin.iml" filepath="$PROJECT_DIR$/meccacenteradmin/meccacenteradmin.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mecca_center.app.meccacenter" >
+
+    <uses-sdk tools:overrideLibrary="com.moshx.indicators" />
+
+    <permission
+        android:name="com.mecca_center.app.meccacenter.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.mecca_center.app.meccacenter.permission.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.egy.dev.meccacenter.permission.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.egy.dev.meccacenter.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app_"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/MAP_API" />
+z
+        <activity
+            android:name=".MainActivity_"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddEventActivity_"
+            android:parentActivityName=".MainActivity_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mecca_center.app.meccacenter.MainActivity_" />
+        </activity>
+
+        <service android:name=".AzanService_" />
+        <service android:name=".NotifyEventsService_" />
+
+        <receiver
+            android:name=".AlarmBroadcast_"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="com.egy.dev.meccacenter" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AzanWackBroadcast_" />
+        <receiver
+            android:name=".GCMBroadcastReceiver_"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.mecca_center.app.meccacenter" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".DonateActivity_"
+            android:label="@string/title_activity_donate"
+            android:parentActivityName=".MainActivity_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mecca_center.app.meccacenter.MainActivity_" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity_"
+            android:parentActivityName=".MainActivity_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mecca_center.app.meccacenter.MainActivity_" />
+        </activity>
+        <activity
+            android:name=".ShowEventActivity_"
+            android:label="@string/title_activity_show_event"
+            android:parentActivityName=".MainActivity_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mecca_center.app.meccacenter.MainActivity_" />
+        </activity>
+        <activity
+            android:name=".NoticeActivity_"
+            android:label="@string/title_activity_notice"
+            android:parentActivityName=".MainActivity_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mecca_center.app.meccacenter.MainActivity_" />
+        </activity>
+        <provider
+            android:authorities="com.mecca_center.app.meccacenter"
+            android:name=".NoteProvider"/>
+    </application>
+
+</manifest>
